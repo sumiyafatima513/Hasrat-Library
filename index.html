@@ -1,0 +1,118 @@
+index.html
+
+---
+
+### Step 1: Create `index.html`
+
+Go to your GitHub repo (**Hasrat-Library**) → Click **“Add file” → “Create new file”** → name it `index.html` → paste the code below → **Commit**.
+
+Here’s the first version of your `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasrat Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Password Protection -->
+  <div id="password-screen">
+    <h2>🔑 Enter Password</h2>
+    <input type="password" id="password-input" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error-msg"></p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+    <header>
+      <h1>Hasrat Library</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about-shaikh">About Shaikh</a>
+        <a href="#gallery-shaikh">Gallery (Shaikh)</a>
+        <a href="#sheikh-of-shaikh">Sheikh of Sheikh</a>
+        <a href="#great-grandson">Great Grandson</a>
+        <a href="#gallery-grandson">Great Grandson (Photos)</a>
+        <a href="#books">Books</a>
+        <a href="#kalams">Kalams</a>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+      <h2>Welcome to Hasrat Library</h2>
+      <p>A digital archive preserving the legacy of Sheikh Abdul Qadeer Siddiqui (Hasrat) and his family.</p>
+    </section>
+
+    <!-- About Shaikh -->
+    <section id="about-shaikh">
+      <h2>About Shaikh Abdul Qadeer Siddiqui (Hasrat)</h2>
+      <p>[Here goes the introduction you shared about him.]</p>
+    </section>
+
+    <!-- Gallery Shaikh -->
+    <section id="gallery-shaikh">
+      <h2>Gallery of Shaikh</h2>
+      <div class="gallery">
+        <img src="images/shaikh1.png" alt="Shaikh Photo 1">
+        <img src="images/shaikh2.png" alt="Shaikh Photo 2">
+        <img src="images/shaikh3.png" alt="Shaikh Photo 3">
+      </div>
+    </section>
+
+    <!-- Sheikh of Sheikh -->
+    <section id="sheikh-of-shaikh">
+      <h2>Shaikh of Shaikh Abdul Qadeer Siddiqui</h2>
+      <img src="images/sheikh-of-shaikh.png" alt="Sheikh of Sheikh">
+      <p>Spiritual guide and mentor of Shaikh Abdul Qadeer Siddiqui.</p>
+    </section>
+
+    <!-- Great Grandson -->
+    <section id="great-grandson">
+      <h2>Great Grandson: Mohammed Abu Turab Ali Siddiqui (Hastee)</h2>
+      <p>[Here goes the detailed introduction you wrote about him.]</p>
+    </section>
+
+    <!-- Great Grandson Photos -->
+    <section id="gallery-grandson">
+      <h2>Gallery of Great Grandson</h2>
+      <div class="gallery">
+        <img src="images/grandson1.png" alt="Grandson Photo 1">
+        <img src="images/grandson2.png" alt="Grandson Photo 2">
+      </div>
+    </section>
+
+    <!-- Books -->
+    <section id="books">
+      <h2>Books</h2>
+      <p>Upload and showcase books here:</p>
+      <input type="file" id="book-upload" multiple>
+      <ul id="book-list"></ul>
+    </section>
+
+    <!-- Kalams -->
+    <section id="kalams">
+      <h2>Kalams of Great Grandson</h2>
+      <p>Upload and showcase kalams here:</p>
+      <input type="file" id="kalam-upload" multiple>
+      <ul id="kalam-list"></ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Hasrat Library</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+Added index.html (main page of Hasrat Library)
+
+
