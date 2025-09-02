@@ -4,108 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hasrat Library</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      width: calc(25% - 10px);
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .books, .kalams {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Password Protection -->
-  <div id="password-screen">
-    <h2>Enter Password</h2>
-    <input type="password" id="password-input" placeholder="Enter Password">
-    <button onclick="checkPassword()">Submit</button>
-    <p id="error-message"></p>
-  </div>
 
-  <!-- Main Content -->
-  <div id="main-content" style="display: none;">
-    <header>
-      <h1>Hasrat Library</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about-shaikh">About Shaikh</a>
-        <a href="#gallery-shaikh">Gallery (Shaikh)</a>
-        <a href="#section-shaikh">Section of Shaikh</a>
-        <a href="#great-grandson">Great Grandson</a>
-        <a href="#gallery-grandson">Great Grandson (Photos)</a>
-        <a href="#books">Books</a>
-        <a href="#kalams">Kalams</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Hasrat Library</h1>
+    <p>Preserving the Legacy of Sheikh Abdul Qadeer Siddiqui (Hasrat) and His Descendants</p>
+  </header>
 
-    <section id="home">
-      <h2>Welcome to Hasrat Library</h2>
-      <p>A digital archive preserving the legacy of Sheikh Abdul Qadeer Siddiqui (Hasrat) and his family.</p>
-    </section>
+  <nav>
+    <a href="#sheikh">Sheikh Abdul Qadeer Siddiqui</a>
+    <a href="#grandson">Mohammed Abu Turab Ali Siddiqui</a>
+    <a href="#books">Books</a>
+    <a href="#kalams">Kalams</a>
+  </nav>
 
-    <!-- About Shaikh -->
-    <section id="about-shaikh">
-      <h2>About Sheikh Abdul Qadeer Siddiqui (Hasrat)</h2>
-      <p>(Here goes the detailed introduction you shared about him.)</p>
-    </section>
+  <!-- Sheikh Section -->
+  <section id="sheikh">
+    <h2>Maulvi Muhammed Abdul Qadeer Siddiqui (Hasrat) (1870–1962)</h2>
+    <p>
+      Maulvi Muhammed Abdul Qadeer Siddiqui (Arabic: محمد عبدالقدير صديقى ‎), widely known by his pen name Hasrat, 
+      was an Islamic theologian, Qur’anic exegete, poet, and Sufi of Southern India. Born in Hyderabad in 1870, 
+      he was a descendant of the first Caliph Abu Bakr (RA).
+    </p>
+    <p>
+      Due to the absence of formal schools at the time, he acquired education through individual teachers and later 
+      passed private examinations, earning distinctions such as Maulvi Fazil, Munshi, Munshi Alim, and Munshi Fazil. 
+      At just fifteen years of age, he began serving as a Mufti and teacher of Fiqh (Islamic Jurisprudence).
+    </p>
+    <p>
+      He later became the first Dean of the Faculty of Theology at Osmania University, Hyderabad, under the patronage 
+      of the Nizam VII, Osman Ali Khan. His tenure was so highly valued that it was extended annually even after retirement age for a decade.
+    </p>
+    <p>
+      Revered as Bahr Ul Uloom (Ocean of Knowledge), Siddiqui was a master of Qur’anic commentary, Islamic law, theology, 
+      and philosophy. He was a prolific poet, writing in Arabic, Persian, and Urdu, adopting the pen name Hasrat. 
+      Beloved among his disciples as Qadeer Piya, he devoted his life to scholarship, teaching, and spiritual guidance. 
+      He preferred the humble title Maulvi Abdul Qadeer Siddiqui, avoiding other titles his family held.
+    </p>
+    <p>
+      He passed away in 1962 and was laid to rest in Siddiq Gulshan, Hyderabad. A grand dome is being constructed over 
+      his grave, expected to be among the tallest in the region. His ‘Urs (death anniversary) is commemorated annually 
+      on the 16th, 17th, and 18th of Shawwal, drawing devotees and admirers.
+    </p>
+    <p>
+      A detailed biography titled “ABDULLAH – a Servant of Allah” (600 pages) was later compiled by his grandson, 
+      Maulvi Muhammad Anwaruddin Siddique.
+    </p>
+    <p>
+      His first spiritual master was his maternal uncle, Syed Khaja Muhammad Siddiq Hussaini, famously known as Mahboob Allah, 
+      who nurtured generations of Sufi saints. Siddiqui often said: “My father is Siddiqi (a reference to Abu Bakr as-Siddiq) 
+      and my Shaikh is Siddiq. I am a Siddiqi from every angle.”
+    </p>
+    <p>
+      He travelled widely, gaining knowledge from scholars across the Muslim world, and became a source of inspiration for 
+      thousands of students and disciples. Among his renowned students were Shaik al-Islam Sayyid Muhammad Badshah Husaini, 
+      Dr. Muhammad Hamidullah, Dr. Abdul Hafiz Qatil, Professor Ilyas Burney, and many others.
+    </p>
+    <p>
+      During his lifetime, he appointed 92 Khulafa’ (spiritual successors) in the Qadri-Qadeeri Silsila. Their influence spread 
+      across India and beyond, reaching the USA and Canada. His spiritual leadership continues through his descendants, with 
+      Hafez Abdul Razakh Siddiqui serving as the present Ja-i Nashin since 2011.
+    </p>
 
-    <!-- Gallery Shaikh -->
-    <section id="gallery-shaikh">
-      <h2>Gallery of Shaikh</h2>
-      <div class="gallery">
-        <img src="images/sheikh/1dbb79a5-fe32-464e-8161-2684595e2cbd.png" alt="Sheikh">
-        <img src="images/sheikh/2d31be78-58ff-46e8-a307-2299c5e53286.png" alt="Sheikh">
-        <img src="images/sheikh/34f7075f-2c80-45b1-9d79-4af981aa4374.png" alt="Sheikh">
-        <img src="images/sheikh/397ea043-4f9d-40b6-bc5b-b553558c8566.png" alt="Sheikh">
-        <img src="images/sheikh/7fd33993-c1b0-4da3-a0b7-9eb861e06db0.png" alt="Sheikh">
-        <img src="images/sheikh/9c8385b1-0d71-4d81-a153-6a084ae063f8.png" alt="Sheikh">
-        <img src="images/sheikh/IMG_E0202.JPG" alt="Sheikh">
-      </div>
-    </section>
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="images/sheikh/1dbb79a5-fe32-464e-8161-2684959e2cbd.png" alt="Sheikh 1">
+      <img src="images/sheikh/2d31be78-58ff-46e8-a307-2299c5e53286.png" alt="Sheikh 2">
+      <img src="images/sheikh/34f7075f-2c80-45b1-9d79-4af981aa4374.png" alt="Sheikh 3">
+      <img src="images/sheikh/397ea043-4f9d-40b6-bc5b-b553558c8566.png" alt="Sheikh 4">
+      <img src="images/sheikh/7fd33993-c1b0-4da3-a0b7-9eb861e06db0.png" alt="Sheikh 5">
+      <img src="images/sheikh/9c8385b1-0d71-4d81-a153-6a084ae063f8.png" alt="Sheikh 6">
+      <img src="images/sheikh/IMG_E0202.JPG"" alt="Sheikh 7">
+    </div>
+  </section>
 
-    <!-- Section of Shaikh -->
-    <section id="section-shaikh">
-      <h2>Section of Shaikh Abdul Qadeer Siddiqui</h2>
-      <p>(Spiritual guide and mentor of Shaikh Abdul Qadeer Siddiqui.)</p>
-    </section>
+  <!-- Grandson Section -->
+  <section id="grandson">
+    <h2>Mohammed Abu Turab Ali Siddiqui (Hastee)</h2>
+    <p>
+      Born on 16 November 1998, Mohammed Abu Turab Ali Siddiqui is the great-grandson of Sheikh Abdul Qadeer Siddiqui (Hasrat), 
+      and the 34th generation descendant of Caliph Abu Bakr as-Siddiq (RA). Uniquely, after Sheikh Abdul Qadeer Siddiqui himself, 
+      he is the only one in the family to carry the name Mohammed, bestowed upon him in honor of his great-grandfather Abu Turab Ali Siddiqui.
+    </p>
+    <p>
+      From childhood, he has been deeply religious, known for his steadfast observance of prayer and commitment to living within 
+      the boundaries of Shari’ah. His heart is filled with the love of the Prophet Muhammad (ﷺ) and the Ahl al-Bayt, and he strives 
+      to always walk on the path of truth, sincerity, and humility.
+    </p>
+    <p>
+      It is often remarked that his face bears a resemblance to his great-grandfather’s Shaikh and maternal uncle, the legendary 
+      Syed Khaja Muhammad Siddiq Hussaini (Mahboob Allah). Like his forefathers, he is admired for his kindness, honesty, and spiritual devotion.
+    </p>
+    <p>
+      As a writer and poet under the pen name Hastee, he has composed numerous kalaams, which reflect his love for Allah, 
+      His Messenger (ﷺ), and the spiritual tradition of his family. These works will be showcased in a dedicated section of this website, 
+      continuing the legacy of literature and devotion.
+    </p>
+    <p>
+      With sincerity and passion, Mohammed Abu Turab Ali Siddiqui has taken the initiative to compile and digitize his great-grandfather’s works, 
+      founding the Hasrat Library as a means to preserve this heritage and make it accessible to future generations. His efforts reflect the 
+      living continuation of a spiritual lineage rooted in knowledge, devotion, and love.
+    </p>
 
-    <!-- Great Grandson -->
-    <section id="great-grandson">
-      <h2>Great Grandson: Hammad Anwar Turu Ali Siddiqui (Hasrat)</h2>
-      <p>(Here goes the detailed introduction you wrote about him.)</p>
-    </section>
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="images/grandson/20211113_202041_874.jpg" alt="Grandson 1">
+      <img src="images/grandson/20211113_202125_837.jpg" alt="Grandson 2">
+      <img src="images/grandson/WhatsApp Image 2023-08-17 at 16.25.07 (1).jpeg" alt="Grandson 3">
+      <img src="images/grandson/WhatsApp Image 2023-08-17 at 16.25.08.jpeg" alt="Grandson 4">
+      <img src="images/grandson/WhatsApp Image 2023-08-17 at 16.25.09 (2).jpeg" alt="Grandson 5">
+      <img src="images/grandson/WhatsApp Image 2025-09-02 at 1.34.22 PM (1).jpeg" alt="Grandson 6">
+      <img src="images/grandson/WhatsApp Image 2025-09-02 at 1.34.22 PM (2).jpeg" alt="Grandson 7">
+      <img src="images/grandson/WhatsApp Image 2025-09-02 at 1.34.22 PM (3).jpeg" alt="Grandson 8">
+      <img src="images/grandson/WhatsApp Image 2025-09-02 at 1.34.22 PM (4).jpeg" alt="Grandson 9">
+      <img src="images/grandson/WhatsApp Image 2025-09-02 at 1.34.22 PM.jpeg" alt="Grandson 10">
+    </div>
+  </section>
 
-    <!-- Great Grandson Photos -->
-    <section id="gallery-grandson">
-      <h2>Gallery of Great Grandson</h2>
-      <div class="gallery">
-        <img src="images/grandsons/20211113_202041_874.jpg" alt="Grandson">
-        <img src="images/grandsons/20211113_202125_837.jpg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2023-08-17 at 16.25.07 (1).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2023-08-17 at 16.25.08.jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2023-08-17 at 16.25.09 (2).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2025-09-02 at 1.34.22 PM (1).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2025-09-02 at 1.34.22 PM (2).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2025-09-02 at 1.34.22 PM (3).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2025-09-02 at 1.34.22 PM (4).jpeg" alt="Grandson">
-        <img src="images/grandsons/WhatsApp Image 2025-09-02 at 1.34.22 PM.jpeg" alt="Grandson">
-      </div>
-    </section>
+  <!-- Books Section -->
+  <section id="books" class="books">
+    <h2>Books</h2>
+    <p>Here you can find and add books related to Sheikh Abdul Qadeer Siddiqui and his family’s legacy.</p>
+    <ul>
+      <li><a href="books/book1.pdf" target="_blank">Book 1 (Sample)</a></li>
+      <li><a href="books/book2.pdf" target="_blank">Book 2 (Sample)</a></li>
+      <!-- Add more books here -->
+    </ul>
+  </section>
 
-    <!-- Books -->
-    <section id="books">
-      <h2>Books</h2>
-      <p>Upload and showcase books here:</p>
-      <input type="file" id="book-upload" multiple>
-      <ul id="book-list"></ul>
-    </section>
+  <!-- Kalams Section -->
+  <section id="kalams" class="kalams">
+    <h2>Kalams</h2>
+    <p>Selected kalaams written by Mohammed Abu Turab Ali Siddiqui (Hastee).</p>
+    <ul>
+      <li><a href="kalams/kalam1.pdf" target="_blank">Kalam 1 (Sample)</a></li>
+      <li><a href="kalams/kalam2.pdf" target="_blank">Kalam 2 (Sample)</a></li>
+      <!-- Add more kalams here -->
+    </ul>
+  </section>
 
-    <!-- Kalams -->
-    <section id="kalams">
-      <h2>Kalams of Great Grandson</h2>
-      <p>Upload and showcase kalams here:</p>
-      <input type="file" id="kalams-upload" multiple>
-      <ul id="kalams-list"></ul>
-    </section>
+  <footer>
+    <p>&copy; 2025 Hasrat Library | Preserving Spiritual Legacy</p>
+  </footer>
 
-    <footer>
-      <p>&copy; 2025 Hasrat Library</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
